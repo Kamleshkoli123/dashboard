@@ -8,17 +8,27 @@ import java.util.List;
 @Document(collection = "dashboard")
 public class DashboardItem {
     @Id
-    private String id;
+    private String serviceId;
     private String path;
     private String serviceName;
     private String identifier; // Either 'folder' or 'file'
     private List<String> docs; // Optional, only if identifier = 'file'
     private String thumbnail; // Holds Base64 encoded image data
-	public String getId() {
-		return id;
+    private String status;
+    
+	public String getStatus() {
+		return status;
 	}
-	public void setId(String id) {
-		this.id = id;
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+    
+	public String getServiceId() {
+		return serviceId;
+	}
+	public void setServiceId(String id) {
+		this.serviceId = id;
 	}
 	public String getPath() {
 		return path;
@@ -49,6 +59,12 @@ public class DashboardItem {
 	}
 	public void setThumbnail(String thumbnail) {
 		this.thumbnail = thumbnail;
+	}
+
+	@Override
+	public String toString() {
+		return "DashboardItem [id=" + serviceId + ", path=" + path + ", serviceName=" + serviceName + ", identifier="
+				+ identifier + ", docs=" + docs + ", thumbnail=" + thumbnail + ", status=" + status + "]";
 	}
     
     

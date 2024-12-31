@@ -99,13 +99,16 @@ Validation Rules
 Service ID: Lowercase alphanumeric with underscores (^[a-z0-9_]+$).
 Status: Must be either active or inactive.
 Required Fields: id, path, serviceName, identifier, thumbnail.
+
 Features
 Role-based Access: Admins can perform add, update, and delete operations. Users can only fetch items.
 JWT Authentication: Ensures secure communication and access control.
 MongoDB Integration: Supports dynamic CRUD operations.
 Validation: Strict payload validation for all requests.
+
 Sample Payloads
 Add Item
+
 json
 
 {

@@ -14,10 +14,10 @@ Query Parameters:
 path (String): The path to fetch dashboard items for.
 Responses:
 
-Status Code	Description
-200	List of dashboard items
-401	Unauthorized access
-500	Internal Server Error
+Status Code Description
+200 List of dashboard items
+401 Unauthorized access
+500 Internal Server Error
 Sample Request:
 
 http
@@ -45,11 +45,11 @@ Copy code
 }
 Responses:
 
-Status Code	Description
-200	Item added successfully
-400	Validation errors
-401	Unauthorized access
-500	Internal Server Error
+Status Code Description
+200 Item added successfully
+400 Validation errors
+401 Unauthorized access
+500 Internal Server Error
 3. Update Dashboard Item
 URL: /dashboard/updateService/{serviceId}
 Method: PUT
@@ -71,11 +71,11 @@ Copy code
 }
 Responses:
 
-Status Code	Description
-200	Item updated successfully
-400	Validation errors
-401	Unauthorized access
-500	Internal Server Error
+Status Code Description
+200 Item updated successfully
+400 Validation errors
+401 Unauthorized access
+500 Internal Server Error
 4. Delete Dashboard Item
 URL: /dashboard/deleteDashboardItem
 Method: DELETE
@@ -87,11 +87,11 @@ Query Parameters:
 dashboardId (String): ID of the dashboard item to delete.
 Responses:
 
-Status Code	Description
-200	Item deleted successfully
-401	Unauthorized access
-403	Access Denied
-500	Internal Server Error
+Status Code Description
+200 Item deleted successfully
+401 Unauthorized access
+403 Access Denied
+500 Internal Server Error
 Sample Request:
 
 http
@@ -103,8 +103,8 @@ URL: /dashboard/test
 Method: GET
 Responses:
 
-Status Code	Description
-200	"test success"
+Status Code Description
+200 "test success"
 Validation Rules
 Service ID: Lowercase alphanumeric with underscores (^[a-z0-9_]+$).
 Status: Must be either active or inactive.
